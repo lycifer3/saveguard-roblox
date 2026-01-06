@@ -1,0 +1,36 @@
+# Roblox Studio
+*.rbxl.lock
+*.rbxlx.lock
+
+# Build output
+/build/
+/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Rojo sourcemap
+sourcemap.json
+
+# Node modules (if using npm tools)
+node_modules/
+
+# Wally packages
+Packages/
+
+# Internal documentation (not for public repo)
+docks/
+WALLY_PUBLISH.md
+
+# Internal testing (scenario tests)
+tests/scenario/
+
+# Cursor AI plans
+.cursor/plans/

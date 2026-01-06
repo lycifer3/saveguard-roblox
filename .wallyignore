@@ -1,0 +1,12 @@
+# Exclude from Wally package
+tests/
+examples/
+docks/
+.vscode/
+.git/
+.gitignore
+*.md
+!README.md
+Packages/
+wally.lock
+

@@ -1,0 +1,4 @@
+# Aftman configuration for Roblox toolchain
+[tools]
+rojo = "rojo-rbx/rojo@7.4.4"
+

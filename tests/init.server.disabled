@@ -1,0 +1,31 @@
+--[[
+	init.server.luau
+	Test runner script - automatically runs all tests
+]]
+
+local TestEZ = require(game.ReplicatedStorage.Packages.TestEZ)
+
+print("\n" .. string.rep("=", 70))
+print("DataSafetyKit - Test Suite")
+print(string.rep("=", 70))
+
+-- Run all tests
+local results = TestEZ.TestBootstrap:run({
+	game.ServerScriptService.Tests
+})
+
+print(string.rep("=", 70))
+
+if results.failureCount == 0 then
+	print(string.format("✅ ALL TESTS PASSED! (%d tests)", results.successCount))
+else
+	warn(string.format("❌ TESTS FAILED! %d passed, %d failed", 
+		results.successCount, 
+		results.failureCount
+	))
+end
+
+print(string.rep("=", 70) .. "\n")
+
+return results
+
